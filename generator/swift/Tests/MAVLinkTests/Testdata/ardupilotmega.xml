@@ -8,6 +8,16 @@
   <enums>
     <!-- ardupilot specific MAV_CMD_* commands -->
     <enum name="MAV_CMD">
+      <entry name="MAV_CMD_NAV_TIME_WAYPOINT" value="26">
+        <description>Navigate to MISSION at specified time.</description>
+        <param index="1">Empty</param>
+        <param index="2">Empty</param>
+        <param index="3">Empty</param>
+        <param index="4">Time (s)</param>
+        <param index="5">Latitude</param>
+        <param index="6">Longitude</param>
+        <param index="7">Altitude</param>
+      </entry>
       <entry name="MAV_CMD_DO_GRIPPER" value="211">
         <description>Mission command to operate EPM gripper</description>
         <param index="1">gripper number (a number from 1 to max number of grippers on the vehicle)</param>
